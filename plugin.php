@@ -37,18 +37,30 @@ define( 'UAL_MIN_PHP_VERSION', '5.6' );
  * Classes.
  */
 require_once 'php/class-activity-cpt.php';
+require_once 'php/class-activity-actions.php';
+require_once 'php/class-activity-logging.php';
+require_once 'php/class-activity-helpers.php';
 
 /**
  * Namespaces.
  */
 use UAL\Activity_Cpt;
+use UAL\Activity_Actions;
+use UAL\Action_Log;
+use UAL\Helpers;
 
 /**
  * Instances.
  */
-$activity_cpt = new Activity_Cpt();
+$activity_cpt     = new Activity_Cpt();
+$activity_actions = new Activity_Actions();
+$action_log       = new Action_Log();
+$helpers          = new Helpers();
 
 /**
  * Run!
  */
 $activity_cpt->run();
+$activity_actions->run();
+$action_log->run();
+$helpers->run();
