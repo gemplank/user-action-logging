@@ -69,7 +69,7 @@ class Activity_Actions {
 	}
 
 	/**
-	 * Unleash Hell.
+	 * Run function.
 	 *
 	 * @since   0.1.0
 	 */

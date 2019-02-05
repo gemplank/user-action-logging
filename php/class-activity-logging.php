@@ -67,7 +67,7 @@ class Action_Log {
 	}
 
 	/**
-	 * Unleash Hell.
+	 * Run function.
 	 *
 	 * @since   0.1.0
 	 */

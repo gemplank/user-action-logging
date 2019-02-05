@@ -69,7 +69,7 @@ class Helpers {
 	}
 
 	/**
-	 * Unleash Hell.
+	 * Run function.
 	 *
 	 * @since   0.1.0
 	 */
