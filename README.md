@@ -25,4 +25,6 @@ if ( ! empty( $user_id ) ) {
 
 The final line - `do_action( 'ual_log_action', $user->ID, $user_name . ' logged In', 'logged-in' );` is where the magic happens! It takes 4 parameters; action name (`ual_log_action`), user ID (int), message (string) and taxonomy slug (string). When this action is used, a post gets created within the `Activity` CPT and utilises the final parameter to set a taxonomy to that post. This helps with filtering and being able to gain stats. By default, the `Activity` post that gets created assigns the user ID as the author - again this helps to filter activity by user.
 
+You can paste that `do_action` line anywhere in your theme (provided the plugin is activated) and the activity will be created.
+
 Once you have a range of activity triggers, you could generate a PDF/CSV which contains all the posts for all users or specific users. If you have any questions or improvements feel free to let me know! :)
